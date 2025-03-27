@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-database-compat.js"></script>
+
+    
+
+</head>
+<body>
+
+    <div id="login-container">
+        <h2>Connexion</h2>
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Mot de passe">
+        <button onclick="login()">Se connecter</button>
+        <p id="error-message"></p>
+    </div>
+
+    <div id="app-container" style="display: none;">
+        <h2>Bienvenue</h2>
+        <button onclick="showPage('ajouter-client')">Ajouter un Client</button>
+        <button onclick="showPage('recherche-client')">Chercher un Client</button>
+        <button onclick="logout()">Déconnexion</button>
+
+        <div id="ajouter-client" class="page" style="display: none;">
+            <h3>Ajouter un Client</h3>
+                <input type="text" id="client-nom" placeholder="Entrez le nom">
+                <input type="text" id="client-prenom" placeholder="Entrez le prénom">
+
+                <input type="text" id="client-motif" placeholder="Entrez le motif">
+
+                <button onclick="ajouterClient()">Ajouter</button>
+                <p id="resultADD-message" style="display: none;"></p>
+
+        </div>
+        <div id="recherche-client" class="page" style="display: none;">
+            <h3>Rechercher un Client</h3>
+            <input type="text" id="search-client" placeholder="Nom du client">
+            <button id="search-button" onclick="rechercherClient()">Rechercher</button>
+            <label id="result-message"></label>
+
+        </div>
+        
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
