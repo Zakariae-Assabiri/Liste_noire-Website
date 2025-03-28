@@ -15,7 +15,7 @@ Elle permet de centraliser et gérer une base de données des **clients à risqu
 
 ## 🚀 Fonctionnalités principales  
 🔍 **Recherche instantanée** : Trouvez un client en quelques secondes.  
-📂 **Gestion complète** : Ajoutez, modifiez et supprimez des clients signalés.  
+📂 **Gestion complète** : Ajoutez des clients signalés.  
 📊 **Historique des incidents** : Consultez les détails des précédentes infractions.  
 🔐 **Connexion sécurisée** : Authentification via **Firebase Authentication**.  
 ☁️ **Stockage Cloud** : Données enregistrées et protégées sur **Firebase Firestore**.  
@@ -29,9 +29,3 @@ Elle permet de centraliser et gérer une base de données des **clients à risqu
 
 ---
 
-## ⚙️ Installation et exécution  
-
-1️⃣ **Cloner le projet**  
-```sh
-git clone https://github.com/votre-repo/liste-noire-web.git
-cd liste-noire-web
